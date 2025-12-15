@@ -8,7 +8,7 @@ import {
   changeSign,
 } from "./modules/operations";
 
-let currentInput = '0';
+let currentInput = "0";
 let previousInput = "";
 let operation = null;
 let shouldResetScreen = false;
