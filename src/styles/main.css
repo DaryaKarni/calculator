@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(71, 70, 142, 0.884);
+  font-family: sans-serif;
+}
+
+.calculator {
+  width: 400px;
+  height: 470px;
+  background-color: rgba(46, 46, 72, 0.966);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.screen {
+  color: white;
+  font-size: 4rem;
+  text-align: right;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  min-height: 60px;
+  word-wrap: break-word;
+  height: 80px;
+}
+
+.keyboard{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  filter: brightness(1.4);
+}
+
+.btn-operation, .btn-equals {
+  background-color: rgb(80, 80, 168);
+  color: white;
+}
+.btn-clear, .btn-sign, .btn-percent {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+.btn-zero {
+  grid-column: span 2;
+  border-radius: 20px;
+  text-align: center;
+}
