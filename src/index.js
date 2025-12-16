@@ -80,8 +80,11 @@ function compute() {
     default:
       return;
   }
-
-  currentInput = parseFloat(computation.toFixed(8)).toString();
+  if (typeof computation === "number" && Number.isFinite(computation)) {
+    currentInput = parseFloat(computation.toFixed(8)).toString();
+  } else {
+    currentInput = computation.toString();
+  }
   operation = undefined;
   previousInput = "";
   updateScreen();
